@@ -1,7 +1,34 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(241, 239, 239);
+}
+.head {
+    padding: 20px 0px;
+}
+#search-input{
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+#search-btn {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.book-container{
+    margin-bottom: 30px;
+}
+#books-show{
+    margin: 20px;
+    padding-bottom: 30px;
+}
+.col{
+    /* background-color: #F9F9F9; */
+    border: none;
+    padding: 10px;
 }

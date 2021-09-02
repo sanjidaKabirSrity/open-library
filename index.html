@@ -5,13 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Library</title>
+    <!-- fontawesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootstrap link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!-- main css link -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="openlibrary-logo-tighter.svg" alt="">
+    <main class="container">
+        <div class="head">
+            <div class="container-fluid row-cols-2 d-flex">
+            <div class="col-2">
+                <img src="openlibrary-logo-tighter.svg" alt="logo">
+            </div>
+            <div class="input-group mb-3 col-10 w-75 justify-content-end">
+                <input id="search-input" type="text" class="w-50" placeholder="Search Book Name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span id="search-btn" onclick="getBookApi()" class="input-group-text" id="basic-addon2">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+            </div>
+        </div>
+        <div class="bg-white book-container">
+            <div id="search-result-amount" class="text-center"></div>
+            <div id="books-show" class="row row-cols-1 row-cols-md-2 gx -4"></div>
+        </div>
+    </main>
 
 
 
