@@ -25,10 +25,8 @@ body{
 }
 #books-show{
     margin: 20px;
-    padding-bottom: 30px;
 }
 .col{
-    /* background-color: #F9F9F9; */
     border: none;
     padding: 10px;
 }

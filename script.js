@@ -31,7 +31,6 @@ const displayResult = (books) => {
         books.forEach(book => {
             const bookDiv = document.createElement('div');
             bookDiv.classList.add("col");
-
             bookDiv.innerHTML = `
                 <div class="bg-light border-0 card h-100 shadow-sm">
                     <div class="row g-0">
@@ -41,9 +40,9 @@ const displayResult = (books) => {
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">${book.title}</h5>
-                                <p class="card-text">By <span>${book.author_name!==undefined ? book.author_name:""}</span></p>
-                                <small class="card-text text-muted">Published by <span>${book.publisher!==undefined ? book.publisher:""}</span></small><br>
-                                <small class="card-text text-muted">First published in <span>${book.first_publish_year!==undefined ? book.first_publish_year:""}</span></small>
+                                <p class="card-text">By <span>${book.author_name!==undefined ? book.author_name[0]:""}</span></p>
+                                <small class="card-text text-muted">Published by <span>${book.publisher!==undefined ? book.publisher[0]:""}</span></small><br>
+                                <small class="card-text text-muted">First published in <span>${book.first_publish_year!==undefined ? book.first_publish_year[0]:""}</span></small>
                             </div>
                         </div>
                     </div>
